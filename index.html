@@ -11,26 +11,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
 
-header{margin-bottom: 1rem;
-}
-
-
+        header{margin-bottom: 1rem;
+          }
         body {
             font-family: "Racing Sans One", sans-serif;
             font-weight: 400;
             font-style: normal;
-
-        margin: 0;
-        background-image:
-            linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
-            url('img/lasvegas-colapinto.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-color: #000;
+            margin: 0;
+            background-image:
+                linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+                url('img/lasvegas-colapinto.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #000;
         }
-
+        .cam{
+          margin-bottom: 1rem;
+        }
         /* Videos del mosaico */
         .cam video {
         width: 100%;
@@ -38,6 +37,22 @@ header{margin-bottom: 1rem;
         background:  rgba(0,0,0,0.);
         cursor: pointer;
         }
+
+        h1 {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0 0 3px #ff005e, 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e;
+         animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
 
        
 </style>
@@ -49,8 +64,10 @@ header{margin-bottom: 1rem;
         <p class="mb-0">Hacé clic en un video para verlo en pantalla completa.</p>
     </div>
 </header>
-<body class="container-fluid text-white text-center py-3">
 
+<hr style="border-color:#444;">
+
+<body class="container-fluid text-white text-center py-3">
   <div class="row">
     <!-- 17 mosaicos -->
     <!-- Cada mosaico ocupa col-6 en móviles y col-3 en pantallas grandes -->
