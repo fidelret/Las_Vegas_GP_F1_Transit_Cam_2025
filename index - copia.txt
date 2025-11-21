@@ -131,7 +131,7 @@
   <footer style="color:#aaa; font-size:12px; text-align:center; margin-top:40px; padding:20px;">
     <div id="twitter-card" class="text-center">
   <a href="https://twitter.com/mar_retex" target="_blank" class="twitter-link">
-    <img src="perfil.jpg" alt="@mar_retex" 
+    <img src="/perfil.jpg" alt="@mar_retex" 
          class="img-fluid rounded-circle mb-2" style="max-width:120px;">
     <div class="twitter-name">@mar_retex - República de Los Hornos</div>
   </a>
