@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mosaico de Cámaras GP Las Vegas 2025</title>
   <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +35,10 @@
         /* Videos del mosaico */
         .cam video {
         width: 100%;
-        height: 200px;
         background:  rgba(0,0,0,0.);
+        aspect-ratio: 16 / 9;
+        height: auto;
+        object-fit: cover;
         cursor: pointer;
         }
 
@@ -88,16 +91,17 @@
 </style>
 </head>
 
-<header>
-    <div class="container-fluid bg-transparent text-white text-center py-2">
-        <h1 class="h1">Mosaico de Cámaras de tránsito en Vivo - GP F1 Las Vegas 2025</h1>
-        <p class="mb-0">Hacé clic en un video para verlo en pantalla completa.</p>
-    </div>
-</header>
 
-<hr style="border-color:#444;">
 
 <body class="container-fluid text-white text-center py-3">
+  <header>
+      <div class="container-fluid bg-transparent text-white text-center py-2">
+          <h1 class="h1">Mosaico de Cámaras de tránsito en Vivo - GP F1 Las Vegas 2025</h1>
+          <p class="mb-0">Hacé clic en un video para verlo en pantalla completa.</p>
+      </div>
+  </header>
+
+<hr style="border-color:#444;">
   <div class="row">
     <!-- 17 mosaicos -->
     <!-- Cada mosaico ocupa col-6 en móviles y col-3 en pantallas grandes -->
